@@ -5,28 +5,28 @@
 class SemanticMd < Formula
   desc "Convert HTML to clean, semantic Markdown optimized for LLMs"
   homepage "https://github.com/thorstenpfister/semantic-markdown"
-  version "3504153"
+  version "1.0.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/thorstenpfister/semantic-markdown/releases/download/3504153/semantic-md-3504153-darwin-arm64.tar.gz"
-      sha256 "2e29b8d893cb94eb78237514278aea766f894ccaf4bba1d2d8cabeca28571b98"
+      url "https://github.com/thorstenpfister/semantic-markdown/releases/download/v1.0.1/semantic-md-v1.0.1-darwin-arm64.tar.gz"
+      sha256 "f6f5e4e264ac9f94aa0dd215c73d3de87cf68debd0297a99ac09b3645221e702"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/thorstenpfister/semantic-markdown/releases/download/3504153/semantic-md-3504153-darwin-amd64.tar.gz"
-      sha256 "95fae5d2723d6914a5eba1501030cbd2e2330aad39108e14e992ed541dc32af9"
+      url "https://github.com/thorstenpfister/semantic-markdown/releases/download/v1.0.1/semantic-md-v1.0.1-darwin-amd64.tar.gz"
+      sha256 "d9cda3218e34f3b65e7d9ac5fa9376688f31ffd262ccefa72d33088caf10ce46"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/thorstenpfister/semantic-markdown/releases/download/3504153/semantic-md-3504153-linux-arm64.tar.gz"
-      sha256 "bf2b3f3cc0fdac9d1af1a03fec2ef151588a63dcab960a798c84aeced8bec01d"
+      url "https://github.com/thorstenpfister/semantic-markdown/releases/download/v1.0.1/semantic-md-v1.0.1-linux-arm64.tar.gz"
+      sha256 "1aaedb11d79a13f2660185834a7ce6c2584c2e25d26717cc01b318eac8b50ce0"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/thorstenpfister/semantic-markdown/releases/download/3504153/semantic-md-3504153-linux-amd64.tar.gz"
-      sha256 "9f38f4a3338d97f8ccdd2d28c621c912323c3f14fa20ad420906a882cc1fe622"
+      url "https://github.com/thorstenpfister/semantic-markdown/releases/download/v1.0.1/semantic-md-v1.0.1-linux-amd64.tar.gz"
+      sha256 "0625f18e19d2ada17502ec7e92966a490806644cb186b66947e5637172141920"
     end
   end
 
